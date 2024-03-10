@@ -82,18 +82,7 @@ export default function Post() {
         helperText={formik.touched.poster && formik.errors.poster ? formik.errors.poster : null}
 
       />
-      <TextField
-        id="outlined-basic"
-        label="Trailer"
-        variant="outlined"
-        value={formik.values.trailer}
-        onChange={formik.handleChange}
-        name="trailer"
-        onBlur={formik.handleBlur}
-        error={formik.touched.trailer && formik.errors.trailer}
-        helperText={formik.touched.trailer && formik.errors.trailer ? formik.errors.trailer : null}
-
-      />
+     
       <TextField
         id="outlined-basic"
         label="Rating"
