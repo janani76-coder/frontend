@@ -13,7 +13,7 @@ export default function GetList() {
     const [getAll, setGetAll] = useState([])
  
     const getData = () => {
-      fetch($`{API}/get`)
+      fetch(`${API}/get`)
         .then((data) => data.json())
         .then((mvs) => setGetAll(mvs));
     }

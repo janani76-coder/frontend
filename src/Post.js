@@ -13,7 +13,6 @@ export default function Post() {
   const movieValidationSchema = yup.object({
     name: yup.string().required(),
     poster: yup.string().required(),
-    trailer: yup.string().required(),
     rating: yup.string().required(),
     summary: yup.string().required(),
   });
@@ -22,7 +21,6 @@ export default function Post() {
     initialValues: {
       name: "",
       poster: "",
-      trailer: "",
       rating: "",
       summary: "",
     },
